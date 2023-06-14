@@ -16,6 +16,7 @@ class SecurityGroupModule:
                 "+-----------------------------------------------------+\n"+
                 "| 1> Listar grupos de seguridad                       |\n"+
                 "| 2> Crear un nuevo grupo se seguridad                |\n"+
+                "| 3> Regresar                                         |\n"+
                 "+-----------------------------------------------------+\n")     
         opcion = int(input("[.] Ingrese una opción: "))
         
@@ -33,7 +34,7 @@ class SecurityGroupModule:
                 print("+-----------------------------------------------------+\n")
                 print(responseid)
                 enabled=True
-                while enabled=True:
+                while enabled==True:
                     optEnabled=input("[.] Desea agregar o editar reglas (S/N): ")
                     if optEnabled=="S":
                         enabled=True
@@ -46,8 +47,8 @@ class SecurityGroupModule:
                     responseadd=ruledao.addRulesSecurityGroup(port_range_min,port_range_max,protocolo,responseid)
                     print("+-----------------------------------------------------+\n")
                     print(responseadd)
-
             case 2: 
+                
                 pass
             case 3: 
                 pass
